@@ -1,7 +1,9 @@
 # Marian Tomov
-## Contract Creation flow for myCargill a proprietary, centralized B2B digital customer portal and supply chain platform 
+## Contract Creation flow for myCargill a proprietary, centralized B2B digital customer portal and supply chain platform
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/i3Lm5V1RyEURPf6T7KslRH/CASC_Desktop---Mobile?page-id=62%3A54642&node-id=62-69513&starting-point-node-id=62%3A69513&embed-host=share" allowfullscreen></iframe>
+## Contract Creation flow for myCargill a proprietary, centralized B2B digital customer portal and supply chain platform mobile version
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/i3Lm5V1RyEURPf6T7KslRH/CASC_Desktop---Mobile?node-id=1-15151&starting-point-node-id=1%3A15151&embed-host=share" allowfullscreen></iframe>
+## Other flows in myCargill
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/XSUOMC6nZXdNHrfZIcI3NF/myCargill_Sprout?page-id=1%3A6723&node-id=39-13643&starting-point-node-id=39%3A13643&embed-host=share" allowfullscreen></iframe>
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/vJKPvLl80ApVDRzE8qRPHQ/eLaborate-DXP?page-id=1715%3A2546&node-id=1777-2182&starting-point-node-id=1777%3A2182&embed-host=share" allowfullscreen></iframe>
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/vJKPvLl80ApVDRzE8qRPHQ/eLaborate-DXP?page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&embed-host=share" allowfullscreen></iframe>
