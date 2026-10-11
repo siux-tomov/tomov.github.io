@@ -1,11 +1,117 @@
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/BqIRtLSdfzBK1tjIksoYeN/BluViu?page-id=0%3A1&node-id=20-24&starting-point-node-id=20%3A24&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/XihMwe7l0rW9m0IV7LMEaE/DSK?page-id=0%3A1&node-id=1-484&starting-point-node-id=1%3A484&scaling=min-zoom&content-scaling=fixed&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/XihMwe7l0rW9m0IV7LMEaE/DSK?node-id=1-484&page-id=0%3A1&starting-point-node-id=1%3A484&embed-host=share" allowfullscreen></iframe>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/i3Lm5V1RyEURPf6T7KslRH/CASC_Desktop---Mobile?page-id=62%3A54642&node-id=62-69513&starting-point-node-id=62%3A69513&embed-host=share" allowfullscreen></iframe>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/i3Lm5V1RyEURPf6T7KslRH/CASC_Desktop---Mobile?node-id=1-15151&starting-point-node-id=1%3A15151&embed-host=share" allowfullscreen></iframe>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/XSUOMC6nZXdNHrfZIcI3NF/myCargill_Sprout?page-id=1%3A6723&node-id=39-13643&starting-point-node-id=39%3A13643&embed-host=share" allowfullscreen></iframe>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/vJKPvLl80ApVDRzE8qRPHQ/eLaborate-DXP?page-id=1715%3A2546&node-id=1777-2182&starting-point-node-id=1777%3A2182&embed-host=share" allowfullscreen></iframe>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/vJKPvLl80ApVDRzE8qRPHQ/eLaborate-DXP?page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&embed-host=share" allowfullscreen></iframe>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/1dWR6A4WorSM0lgHnf5YcR/Flex-Academy?node-id=4-2&viewport=398%2C204%2C0.15&scaling=min-zoom&content-scaling=fixed&page-id=1%3A2&embed-host=share" allowfullscreen></iframe>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/1dWR6A4WorSM0lgHnf5YcR/Flex-Academy?node-id=21-98&viewport=436%2C-498%2C0.16&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share" allowfullscreen></iframe>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/BqIRtLSdfzBK1tjIksoYeN/BluViu?page-id=0%3A1&node-id=20-24&starting-point-node-id=20%3A24&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomov</title>
+    <meta name="description" content="Tomov portfolio and prototype gallery.">
+    <style>
+        :root {
+            --bg: #f4f7fb;
+            --card: #ffffff;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --border: #e5e7eb;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+            color: var(--text);
+            padding: 32px 20px;
+        }
+
+        .card {
+            width: min(760px, 100%);
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            box-shadow: 0 18px 38px rgba(15, 23, 42, 0.08);
+            padding: clamp(28px, 5vw, 56px);
+            text-align: center;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: #dbeafe;
+            color: var(--primary-dark);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0 0 18px;
+            font-size: clamp(2.3rem, 6vw, 4rem);
+            line-height: 1.05;
+            letter-spacing: -0.04em;
+        }
+
+        p {
+            margin: 0 auto 28px;
+            max-width: 600px;
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 24px;
+            border-radius: 12px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-1px);
+        }
+
+        .button.primary {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        .button.primary:hover {
+            background: var(--primary-dark);
+        }
+
+        .button.secondary {
+            background: #eef2ff;
+            color: var(--primary-dark);
+            border: 1px solid #dfe7ff;
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <div class="eyebrow">Portfolio</div>
+        <h1>Tomov</h1>
+        <p>Design prototypes, concept explorations, and interactive previews for product thinking and interface work.</p>
+        <div class="actions">
+            <a class="button primary" href="prototypes.html">Open Prototypes</a>
+            <a class="button secondary" href="https://github.com/siux-tomov/tomov.github.io" target="_blank" rel="noreferrer">GitHub Repo</a>
+        </div>
+    </main>
+</body>
+</html>
