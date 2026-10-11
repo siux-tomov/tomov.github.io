@@ -4,95 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prototypes - Tomov</title>
+    <meta name="description" content="Interactive Figma prototype gallery for Tomov projects.">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --bg: #f4f7fb;
+            --card: #ffffff;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --border: #e5e7eb;
+            --shadow: rgba(15, 23, 42, 0.08);
         }
-        
+
+        * { box-sizing: border-box; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: #f5f5f5;
-            padding: 40px 20px;
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            padding: 48px 20px;
         }
-        
+
         .container {
-            max-width: 900px;
+            width: min(980px, 100%);
             margin: 0 auto;
         }
-        
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+
         h1 {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #333;
+            margin: 0;
+            font-size: clamp(2rem, 4vw, 3rem);
+            letter-spacing: -0.04em;
         }
-        
+
+        .nav {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 18px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 700;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-1px);
+        }
+
+        .button.primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .button.primary:hover {
+            background: var(--primary-dark);
+        }
+
+        .button.secondary {
+            background: #eef2ff;
+            color: var(--primary-dark);
+            border: 1px solid #dfe7ff;
+        }
+
         .prototype-section {
-            background: white;
-            border-radius: 8px;
-            padding: 30px;
-            margin-bottom: 40px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            box-shadow: 0 18px 38px var(--shadow);
+            padding: 28px 22px 20px;
+            margin-bottom: 28px;
         }
-        
+
         .prototype-section h2 {
-            margin-bottom: 20px;
-            color: #333;
-            font-size: 24px;
+            margin: 0 0 18px;
+            font-size: clamp(1.4rem, 2vw, 2rem);
         }
-        
+
         .prototype-container {
             display: flex;
             justify-content: center;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #f9fafb;
+            border: 1px solid var(--border);
         }
-        
+
         iframe {
-            border-radius: 4px;
-        }
-        
-        .nav {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .nav a {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            margin: 0 10px;
-            transition: background 0.3s;
-        }
-        
-        .nav a:hover {
-            background: #0056b3;
+            width: min(100%, 800px);
+            height: 450px;
+            border: 0;
+            display: block;
+            background: white;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Design Prototypes</h1>
-        
-        <div class="nav">
-            <a href="/">← Back to Home</a>
+        <div class="header">
+            <h1>Design Prototypes</h1>
+            <div class="nav">
+                <a class="button secondary" href="./">← Home</a>
+            </div>
         </div>
-        
-        <div class="prototype-section">
+
+        <section class="prototype-section">
             <h2>BluViu</h2>
             <div class="prototype-container">
-                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/BqIRtLSdfzBK1tjIksoYeN/BluViu?page-id=0%3A1&node-id=20-24&starting-point-node-id=20%3A24&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+                <iframe src="https://embed.figma.com/proto/BqIRtLSdfzBK1tjIksoYeN/BluViu?page-id=0%3A1&node-id=20-24&starting-point-node-id=20%3A24&show-proto-sidebar=1&embed-host=share" allowfullscreen title="BluViu prototype"></iframe>
             </div>
-        </div>
-        
-        <div class="prototype-section">
+        </section>
+
+        <section class="prototype-section">
             <h2>DSK</h2>
             <div class="prototype-container">
-                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/XihMwe7l0rW9m0IV7LMEaE/DSK?page-id=0%3A1&node-id=1-484&starting-point-node-id=1%3A484&scaling=min-zoom&content-scaling=fixed&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+                <iframe src="https://embed.figma.com/proto/XihMwe7l0rW9m0IV7LMEaE/DSK?page-id=0%3A1&node-id=1-484&starting-point-node-id=1%3A484&scaling=min-zoom&content-scaling=fixed&show-proto-sidebar=1&embed-host=share" allowfullscreen title="DSK prototype"></iframe>
             </div>
-        </div>
+        </section>
     </div>
 </body>
 </html>
