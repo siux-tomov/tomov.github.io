@@ -47,15 +47,18 @@
             }
         }
 
-        .card {
-            width: min(760px, 100%);
+        .wrap {
+            width: min(1100px, 100%);
             margin: 0 auto;
+        }
+
+        .hero {
             background: var(--card);
             border: 1px solid var(--border);
-            border-radius: 18px;
+            border-radius: 24px;
             box-shadow: 0 18px 38px var(--shadow);
             padding: clamp(28px, 5vw, 56px);
-            text-align: center;
+            margin-bottom: 28px;
             transition: background 0.3s ease, border-color 0.3s ease;
         }
 
@@ -81,16 +84,16 @@
 
         h1 {
             margin: 0 0 18px;
-            font-size: clamp(2.3rem, 6vw, 4rem);
+            font-size: clamp(2.4rem, 7vw, 4.5rem);
             line-height: 1.05;
-            letter-spacing: -0.04em;
+            letter-spacing: -0.05em;
         }
 
-        p {
+        .sub {
             margin: 0 auto 28px;
-            max-width: 600px;
+            max-width: 700px;
             color: var(--muted);
-            font-size: 1.05rem;
+            font-size: 1.08rem;
             line-height: 1.7;
         }
 
@@ -140,17 +143,82 @@
                 background: rgba(37, 99, 235, 0.2);
             }
         }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+            margin-top: 12px;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            box-shadow: 0 18px 38px var(--shadow);
+            padding: 22px;
+            transition: background 0.3s ease, border-color 0.3s ease;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-bottom: 12px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(37, 99, 235, 0.08);
+            color: var(--primary-dark);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .tag {
+                background: rgba(37, 99, 235, 0.15);
+                color: #93c5fd;
+            }
+        }
+
+        h2 {
+            margin: 0 0 10px;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            margin: 0 0 18px;
+            color: var(--muted);
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
-    <main class="card">
-        <div class="eyebrow">Portfolio</div>
-        <h1>Tomov</h1>
-        <p>Design prototypes, concept explorations, and interactive previews for product thinking and interface work.</p>
-        <div class="actions">
-            <a class="button primary" href="prototypes.html">Open Prototypes</a>
-            <a class="button secondary" href="https://github.com/siux-tomov/tomov.github.io" target="_blank" rel="noreferrer">GitHub Repo</a>
-        </div>
-    </main>
+    <div class="wrap">
+        <header class="hero">
+            <div class="eyebrow">Portfolio</div>
+            <h1>Tomov</h1>
+            <p class="sub">Design prototypes, concept explorations, and interactive previews for product thinking and interface work.</p>
+            <div class="actions">
+                <a class="button primary" href="prototypes.html">Open Prototypes</a>
+                <a class="button secondary" href="https://github.com/siux-tomov/tomov.github.io" target="_blank" rel="noreferrer">GitHub Repo</a>
+            </div>
+        </header>
+
+        <section class="grid" aria-label="Project cards">
+            <article class="card">
+                <div class="tag">Prototype</div>
+                <h2>BluViu</h2>
+                <p>Interactive UI concept for the BluViu platform experience.</p>
+                <a class="button primary" href="prototypes.html#bluviu">View</a>
+            </article>
+
+            <article class="card">
+                <div class="tag">Design System</div>
+                <h2>DSK</h2>
+                <p>Design system kit showcasing reusable patterns and product components.</p>
+                <a class="button primary" href="prototypes.html#dsk">View</a>
+            </article>
+        </section>
+    </div>
 </body>
 </html>
